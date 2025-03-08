@@ -1,3 +1,6 @@
+This is a react project about world atlas showing different countries and informative facts about those countries. We have react router for routing between various pages.
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
