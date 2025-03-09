@@ -581,6 +581,7 @@ contact us Page ends here
 /* //Loader  */
 /* HTML: <div class="loader"></div> */
 .loader {
+  margin: auto;
   width: 50px;
   padding: 8px;
   aspect-ratio: 1;
@@ -604,4 +605,8 @@ contact us Page ends here
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer-menu a{
+  text-decoration: none;
 }

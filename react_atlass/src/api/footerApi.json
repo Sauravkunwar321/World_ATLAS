@@ -1,0 +1,17 @@
+[
+    {
+      "icon": "MdPlace",
+      "title": "Find us",
+      "details": "Kathmandu, Nepal"
+    },
+    {
+      "icon": "IoCallSharp",
+      "title": "Call us",
+      "details": "9867857119"
+    },
+    {
+      "icon": "TbMailPlus",
+      "title": "Mail us",
+      "details": "sauravkunwar63@gmail.com"
+    }
+  ]

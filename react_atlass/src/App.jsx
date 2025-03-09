@@ -5,6 +5,7 @@ import { Contact } from "./Pages/Contact";
 import { Country } from "./Pages/Country";
 import { Home } from "./Pages/Home";
 import { Error } from "./Pages/Error";
+import { CountryDetails } from "./Components/CountryDetails";
 import App from "./Components/AppLayout";
 
 import { Routes, Route,} from "react-router";
@@ -19,6 +20,7 @@ const Routing = () => {
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
         <Route path="Country" element={<Country />} />
+        <Route path="Country/:id" element={<CountryDetails />} />
       </Route>
 
       <Route path="*" element={<Error />} />

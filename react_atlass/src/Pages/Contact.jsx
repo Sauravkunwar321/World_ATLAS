@@ -33,7 +33,7 @@ export const Contact = () => {
           rows="10"
           placeholder="Enter your message"
           name="message"
-          autoComplete="false"
+          autoComplete="off"
           required
         ></textarea>
         <button type="submit" value="send">Send</button>
