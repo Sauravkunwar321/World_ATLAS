@@ -2,9 +2,12 @@ import { useState } from "react";
 import { NavLink } from "react-router";
 import { GiHamburgerMenu } from "react-icons/gi"; 
 
+
 export const Header = () => {
 
     const [show, setShow] = useState(false);
+
+    
 
 
     const handleButtonToggle = () => {
@@ -19,20 +22,21 @@ export const Header = () => {
                     <h1>WorldAtlas</h1>
                     </NavLink>
                 </div>
+               
 
                 <nav className={show ? "menu-mobile" : "menu-web"}>
                     <ul>
                         <li>
-                            <NavLink to="/">Home</NavLink>
+                            <NavLink to="/" onClick={handleButtonToggle}>Home</NavLink>
                         </li>
                         <li>
-                        <NavLink to="/about">About</NavLink>
+                        <NavLink to="/about" onClick={handleButtonToggle}>About</NavLink>
                         </li>
                         <li>
-                        <NavLink to="/country">Country</NavLink>
+                        <NavLink to="/country" onClick={handleButtonToggle}>Country</NavLink>
                         </li>
                         <li>
-                        <NavLink to="/contact">Contact</NavLink>
+                        <NavLink to="/contact" onClick={handleButtonToggle}>Contact</NavLink>
                         </li>
                     </ul>
                 </nav>

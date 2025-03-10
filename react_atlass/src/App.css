@@ -144,9 +144,14 @@ nav ul {
     display: none;
   }
 
+  .container{
+    max-width: 85%;
+  }
+
   .ham-menu {
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 15px;
   }
 
   .menu-mobile {
@@ -156,12 +161,16 @@ nav ul {
     background-color: #0d1212;
     width: 100%;
     box-shadow: rgba(255, 252, 252, 0.25) 0px 14px 28px;
+    height: 100vh;
+    justify-content: center;
+    z-index: 10;
   }
 
   .menu-mobile ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 
     & li:first-child {
       margin-top: 1.2rem;
@@ -357,6 +366,13 @@ nav ul {
   }
 }
 
+@media screen and (max-width:760px){
+  .footer-menu ul{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 ul {
   margin: 0px;
   padding: 0px;
@@ -461,6 +477,8 @@ country Card
   }
 
   & input {
+    padding: 1rem;
+    border-radius: 10px;
     font-family: "urbanist";
     font-size: 1.55rem;
     font-weight: bold;
@@ -576,6 +594,20 @@ contact us Page ends here
   .grid--cols {
     grid-template-columns: 1fr;
   }
+
+  .navbar-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .Logo {
+    margin-right: 10px; /* Adjust this to your desired space */
+  }
+
+  .ham-menu button {
+    margin-left: 10px; /* Ensure a gap on the left side of the hamburger icon */
+  }
 }
 
 /* //Loader  */
@@ -600,6 +632,10 @@ contact us Page ends here
   }
 }
 
+a{
+  text-decoration: none;
+}
+
 .loader-section {
   height: 50vh;
   display: flex;
@@ -610,3 +646,24 @@ contact us Page ends here
 .footer-menu a{
   text-decoration: none;
 }
+
+.asc, .desc {
+  margin-top: -15px;
+}
+
+
+@media screen and (max-width:700px){
+  .asc, .desc{
+    display: none;
+  }
+}
+
+@media screen and (max-width:450px){
+  .section-searchFilter{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+  }
+}
+

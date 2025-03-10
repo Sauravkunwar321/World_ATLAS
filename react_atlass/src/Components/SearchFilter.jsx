@@ -29,11 +29,11 @@ export const SearchFilter = ({ search, setSearch, filter, setFilter, countries, 
         onChange={handleInputChange}
       />
 
-<div>
+<div className="asc">
         <button onClick={() => sortCountries("asc")}>Asc</button>
       </div>
 
-      <div>
+      <div className="desc">
         <button onClick={() => sortCountries("des")}>Desc</button>
       </div>
 
